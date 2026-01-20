@@ -11,19 +11,22 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   // Mobile menu toggle
-  const hamburger = document.getElementById("hamburger");
-  const mobileNav = document.getElementById("mobileNav");
-  hamburger.addEventListener("click", () => {
-    mobileNav.classList.toggle("active");
-    hamburger.classList.toggle("open");
-  });
+const hamburger = document.querySelector('.hamburger');
+const mobileNav = document.querySelector('.mobile-nav');
 
-  mobileNav.querySelectorAll("a").forEach(link => {
-    link.addEventListener("click", () => {
-      mobileNav.classList.remove("active");
-      hamburger.classList.remove("open");
-    });
+hamburger.addEventListener("click", () => {
+  mobileNav.classList.toggle("active"); // toggles menu
+  hamburger.classList.toggle("open");   // optional if you have hamburger animation
+});
+
+// Close menu when a link is clicked
+mobileNav.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", () => {
+    mobileNav.classList.remove("active");
+    hamburger.classList.remove("open");
   });
+});
+
 
   // Testimonial infinite scroll
   const track = document.querySelector(".testimonial-track");
@@ -39,3 +42,4 @@ document.addEventListener("DOMContentLoaded", function() {
   }
   requestAnimationFrame(scrollTestimonials);
 });
+
