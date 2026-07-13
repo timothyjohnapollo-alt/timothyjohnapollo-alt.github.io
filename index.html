@@ -3,209 +3,221 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Radium Industrial Supplies Inc.</title>
+  <title>Radium Industrial Supplies Inc. — Industrial Solutions You Can Trust</title>
+  <meta name="description" content="Radium Industrial Supplies Inc. — quality industrial equipment, safety supplies, and maintenance solutions for railway, power, manufacturing, and contractor companies." />
 
-  <!-- Main CSS -->
   <link rel="stylesheet" href="css/style.css" />
 
-  <!-- Fonts & Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
 
-  <!-- Favicon -->
-  <link rel="icon" href="img/favicoon.ico" type="image/x-icon" />
+  <link rel="icon" href="img/faviconradium.jpg" type="image/jpeg" />
+  <link rel="apple-touch-icon" href="img/faviconradium.png" />
 </head>
 
 <body>
 
-<header class="header">
+<!-- ================= HEADER ================= -->
+<header class="header" id="siteHeader">
   <div class="container header-container">
-    <div class="logo">
+    <a href="#home" class="logo">
       <img src="img/placeholder.jpg" alt="Radium Logo" />
-      <span class="logo-text">Radium Industrial Supplies Inc.</span>
-    </div>
+      <span class="logo-text">Radium<strong>Industrial</strong></span>
+    </a>
 
     <nav class="nav desktop-nav">
       <a href="#home">Home</a>
       <a href="#products">Products</a>
+      <a href="#showcase">Showcase</a>
       <a href="#about">About</a>
-      <a href="#testimonials">Testimonials</a>
+      <a href="#testimonials">Clients</a>
       <a href="#contact">Contact</a>
     </nav>
 
-    <a href="#contact" class="btn-quote desktop-btn">Get Quote</a>
+    <a href="#contact" class="btn-quote desktop-btn">Get a Quote</a>
 
-    <div id="hamburger" class="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+    <button id="hamburger" class="hamburger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 
   <div id="mobileNav" class="mobile-nav">
     <a href="#home">Home</a>
     <a href="#products">Products</a>
+    <a href="#showcase">Showcase</a>
     <a href="#about">About</a>
-    <a href="#testimonials">Testimonials</a>
+    <a href="#testimonials">Clients</a>
     <a href="#contact">Contact</a>
-    <a href="#contact" class="btn-quote mobile-btn">Get Quote</a>
+    <a href="#contact" class="btn-quote mobile-btn">Get a Quote</a>
   </div>
 </header>
 
-
-<!-- HERO SECTION -->
+<!-- ================= HERO ================= -->
 <section id="home" class="hero">
   <div class="hero-overlay">
-    <div class="hero-container">
-      <div class="hero-text fade-left">
-        <h1>Quality Industrial <span>Supplies</span><br />You Can Trust</h1>
-        <p class="hero-subtitle">Your Trusted Partner in Industrial Solutions</p>
-        <p class="description">
-          Leading provider of quality industrial supplies and equipment.
+    <div class="container hero-container">
+      <div class="hero-text">
+        <span class="eyebrow reveal">Industrial Supply &amp; Fabrication</span>
+        <h1 class="reveal">Quality Industrial <span>Supplies</span> You Can Trust</h1>
+        <p class="description reveal">
+          Serving railway, power plants, manufacturing, electrical, electro-mechanical,
+          and contractor companies with equipment built to perform.
         </p>
-        <div class="hero-buttons">
+        <div class="hero-buttons reveal">
           <a href="#products" class="btn-primary">Our Products</a>
           <a href="#contact" class="btn-secondary">Get Started</a>
+        </div>
+        <div class="hero-metrics reveal">
+          <div><strong>500+</strong><span>Clients Served</span></div>
+          <div><strong>10K+</strong><span>Products Delivered</span></div>
+          <div><strong>7</strong><span>Industries Supplied</span></div>
         </div>
       </div>
     </div>
   </div>
+  <div class="hero-scroll"><span></span></div>
 </section>
-
-
 
 <!-- ================= PRODUCTS ================= -->
 <section id="products" class="products">
   <div class="container">
-    <h2>Our <span>Products</span></h2>
-    <p class="products-subtitle">
-      Comprehensive industrial supply solutions tailored to meet your business needs
-    </p>
+    <div class="section-head">
+      <span class="eyebrow reveal">What We Supply</span>
+      <h2 class="reveal">Our <span>Products</span></h2>
+      <p class="section-sub reveal">
+        Comprehensive industrial supply solutions tailored to meet your business needs.
+      </p>
+    </div>
 
     <div class="product-grid">
-      <div class="product-card">
-        <img src="img/icons/hardhat.png" alt="Safety Equipment" />
+      <article class="product-card reveal">
+        <div class="product-icon"><img src="img/icons/hardhat.png" alt="Safety Equipment" /></div>
         <h3>Safety Equipment</h3>
         <p>Personal protective equipment and workplace safety solutions.</p>
-      </div>
+      </article>
 
-      <div class="product-card">
-        <img src="img/icons/indtools.png" alt="Industrial Tools" />
+      <article class="product-card reveal">
+        <div class="product-icon"><img src="img/icons/indtools.png" alt="Industrial Tools" /></div>
         <h3>Industrial Tools</h3>
         <p>Professional-grade tools for construction and manufacturing.</p>
-      </div>
+      </article>
 
-      <div class="product-card">
-        <img src="img/icons/cog.png" alt="Machinery Parts" />
+      <article class="product-card reveal">
+        <div class="product-icon"><img src="img/icons/cog.png" alt="Machinery Parts" /></div>
         <h3>Machinery Parts</h3>
         <p>High-quality replacement parts for industrial machinery.</p>
-      </div>
+      </article>
 
-      <div class="product-card">
-        <img src="img/icons/construction.png" alt="Construction Materials" />
+      <article class="product-card reveal">
+        <div class="product-icon"><img src="img/icons/construction.png" alt="Construction Materials" /></div>
         <h3>Construction Materials</h3>
         <p>Durable materials for projects of all sizes.</p>
-      </div>
+      </article>
 
-      <div class="product-card">
-        <img src="img/icons/bolt.png" alt="Electrical Supplies" />
+      <article class="product-card reveal">
+        <div class="product-icon"><img src="img/icons/bolt.png" alt="Electrical Supplies" /></div>
         <h3>Electrical Supplies</h3>
         <p>Reliable electrical components and power solutions.</p>
-      </div>
+      </article>
 
-      <div class="product-card">
-        <img src="img/icons/maintenance.png" alt="Maintenance Supplies" />
+      <article class="product-card reveal">
+        <div class="product-icon"><img src="img/icons/maintenance.png" alt="Maintenance Supplies" /></div>
         <h3>Maintenance Supplies</h3>
         <p>Lubricants, cleaning agents, and repair essentials.</p>
-      </div>
+      </article>
     </div>
   </div>
 </section>
 
-<!-- ================= PRODUCT SHOWCASE ================= -->
+<!-- ================= SHOWCASE CAROUSEL ================= -->
+<section id="showcase" class="product-showcase">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow reveal">In Stock &amp; Fabricated</span>
+      <h2 class="reveal">Product <span>Showcase</span></h2>
+    </div>
+  </div>
 
-<section id="product-showcase" class="product-showcase">
   <div class="carousel-wrapper">
-    <button class="carousel-btn prev">&#10094;</button>
+    <button class="carousel-btn prev" aria-label="Previous">&#10094;</button>
 
     <div class="carousel-track-container">
       <div class="carousel-track">
-
         <div class="carousel-card">
           <img src="img/FabricatedBins.jpg" alt="Fabricated Bins">
           <span class="carousel-title">Fabricated Bins</span>
         </div>
-
         <div class="carousel-card">
           <img src="img/Generator.jpg" alt="Generator">
           <span class="carousel-title">Generator</span>
         </div>
-
         <div class="carousel-card">
           <img src="img/IndustrialFans.jpg" alt="Industrial Fans">
           <span class="carousel-title">Industrial Fans</span>
         </div>
-
         <div class="carousel-card">
           <img src="img/MetalCabinets.jpg" alt="Metal Cabinets">
           <span class="carousel-title">Metal Cabinets</span>
         </div>
-
         <div class="carousel-card">
           <img src="img/TankCovers.jpg" alt="Tank Covers">
           <span class="carousel-title">Tank Covers</span>
         </div>
-
         <div class="carousel-card">
           <img src="img/VariousDrums.jpg" alt="Various Drums">
           <span class="carousel-title">Various Drums</span>
         </div>
-
         <div class="carousel-card">
           <img src="img/Moxa.jpg" alt="Moxa">
           <span class="carousel-title">Moxa</span>
         </div>
-
         <div class="carousel-card">
           <img src="img/Led.jpg" alt="LED Lights">
           <span class="carousel-title">LED Lights</span>
         </div>
-
       </div>
     </div>
 
-    <button class="carousel-btn next">&#10095;</button>
+    <button class="carousel-btn next" aria-label="Next">&#10095;</button>
   </div>
 </section>
 
-<script src="carousel.js"></script>
-
-
 <!-- ================= ABOUT ================= -->
 <section id="about" class="about-section">
-  <div class="about-container">
-    <div class="about-image fade-left">
-      <img src="img/truck.png" alt="About Radium Industrial" />
+  <div class="container about-container">
+    <div class="about-image reveal">
+      <img src="img/truck.png" alt="Radium Industrial delivery truck" />
+      <div class="about-badge">
+        <strong>Est.</strong>
+        <span>Trusted Supplier</span>
+      </div>
     </div>
-    <div class="about-content fade-right">
-      <h2>About <span>Radium Industrial</span></h2>
-      <p>
-        Established with the primary objective of serving the needs for railway, power plants, industrial, manufacturing, electrical, electro-mechanical and contractor companies.
+    <div class="about-content">
+      <span class="eyebrow reveal">Who We Are</span>
+      <h2 class="reveal">About <span>Radium Industrial</span></h2>
+      <p class="reveal">
+        Established with the primary objective of serving the needs of railway, power plants,
+        industrial, manufacturing, electrical, electro-mechanical, and contractor companies.
       </p>
-      <p>
-        We provide high-quality industrial equipment, safety supplies,
-        and maintenance solutions with a commitment to excellence.
+      <p class="reveal">
+        We provide high-quality industrial equipment, safety supplies, and maintenance
+        solutions with a commitment to excellence at every step.
       </p>
 
-      <div class="about-stats">
-        <div class="stat-box fade-up">
+      <ul class="about-points reveal">
+        <li><i class="fas fa-check"></i> Fast, reliable sourcing and delivery</li>
+        <li><i class="fas fa-check"></i> Certified quality across every category</li>
+        <li><i class="fas fa-check"></i> Custom fabrication on request</li>
+      </ul>
+
+      <div class="about-stats reveal">
+        <div class="stat-box">
           <h3>500+</h3>
           <span>Happy Clients</span>
         </div>
-        <div class="stat-box fade-up">
+        <div class="stat-box">
           <h3>10K+</h3>
           <span>Products Delivered</span>
         </div>
@@ -217,96 +229,88 @@
 <!-- ================= TESTIMONIALS ================= -->
 <section id="testimonials" class="testimonials-section">
   <div class="container">
-    <h2>What Our <span>Clients Say</span></h2>
-    <p class="subtitle">Don't just take our word for it – hear from our satisfied customers</p>
+    <div class="section-head">
+      <span class="eyebrow reveal">Testimonials</span>
+      <h2 class="reveal">What Our <span>Clients Say</span></h2>
+      <p class="section-sub reveal">Hear from the businesses that rely on us every day.</p>
+    </div>
 
-    <div class="testimonial-slider">
-      <div class="testimonial-track">
-        <div class="testimonial-card">
-          <div class="stars">★★★★★</div>
-          <p>"Exceptional quality and service."</p>
-          <hr />
-          <h4>Maria Santos</h4>
-          <small>ABC Manufacturing Corp.</small>
-        </div>
+    <div class="testimonial-grid">
+      <figure class="testimonial-card reveal">
+        <div class="stars">★★★★★</div>
+        <blockquote>Exceptional quality and service. Radium has become our go-to supplier.</blockquote>
+        <figcaption>
+          <span class="avatar">MS</span>
+          <div><h4>Maria Santos</h4><small>ABC Manufacturing Corp.</small></div>
+        </figcaption>
+      </figure>
 
-        <div class="testimonial-card">
-          <div class="stars">★★★★★</div>
-          <p>"Reliable and professional partner."</p>
-          <hr />
-          <h4>John Reyes</h4>
-          <small>BuildTech Construction</small>
-        </div>
+      <figure class="testimonial-card reveal">
+        <div class="stars">★★★★★</div>
+        <blockquote>A reliable and professional partner from quote to delivery.</blockquote>
+        <figcaption>
+          <span class="avatar">JR</span>
+          <div><h4>John Reyes</h4><small>BuildTech Construction</small></div>
+        </figcaption>
+      </figure>
 
-        <div class="testimonial-card">
-          <div class="stars">★★★★★</div>
-          <p>"Outstanding product range."</p>
-          <hr />
-          <h4>Lisa Chen</h4>
-          <small>TechPro Industries</small>
-        </div>
-      </div>
+      <figure class="testimonial-card reveal">
+        <div class="stars">★★★★★</div>
+        <blockquote>Outstanding product range and consistently on-time supply.</blockquote>
+        <figcaption>
+          <span class="avatar">LC</span>
+          <div><h4>Lisa Chen</h4><small>TechPro Industries</small></div>
+        </figcaption>
+      </figure>
     </div>
   </div>
 </section>
 
 <!-- ================= CONTACT ================= -->
 <section id="contact" class="contact-section">
-  <div class="container fade-in">
-    <div class="contact-title">
-      <h2>Get In <span>Touch</span></h2>
-      <p>Ready to start your project? Contact us today.</p>
-    </div>
+  <div class="contact-overlay"></div>
+  <div class="container contact-container">
+    <div class="contact-left reveal">
+      <span class="eyebrow">Get In Touch</span>
+      <h2>Let's Build Something <span>Reliable</span></h2>
+      <p class="contact-intro">Ready to start your project? Reach out and our team will get back to you.</p>
 
-<div class="contact-wrapper">
-  <div class="contact-left">
-    <h3>Contact Information</h3>
-    <p>📍 78 San Roque Street, Doña Juana Homes, Holy Spirit, Quezon City, Philippines</p>
-    <p>📞 0905 397 2531 / +63 905 397 2531</p>
-    <p>✉️ radiumindustrial.supp@gmail.com</p>
+      <ul class="contact-info">
+        <li><i class="fas fa-map-marker-alt"></i><span>78 San Roque Street, Doña Juana Homes, Holy Spirit, Quezon City, Philippines</span></li>
+        <li><i class="fas fa-phone"></i><span>0905 397 2531 / +63 905 397 2531</span></li>
+        <li><i class="fas fa-envelope"></i><span>radiumindustrial.supp@gmail.com</span></li>
+      </ul>
 
-    <div class="social-links">
-      <a href="https://www.facebook.com/people/Radium-Industrial-Supplies-Inc/61578065264852/"
-         target="_blank"
-         class="social-btn"
-         aria-label="Radium Industrial Supplies Facebook">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-
-      <a href="https://www.linkedin.com/"
-         target="_blank"
-         class="social-btn"
-         aria-label="LinkedIn">
-        <i class="fab fa-linkedin-in"></i>
-      </a>
-    </div>
-  </div>
-</div>
-
-
-      <div class="contact-right">
-        <h3>Send Us a Message</h3>
-
-        <!-- STATIC FORM -->
-        <form class="contact-form" onsubmit="return false;">
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Your Email" required />
-          <textarea placeholder="Your Message" required></textarea>
-          <button type="submit">Send Message</button>
-
-          <p id="formNotice" style="display:none; margin-top:15px; color:#0f0;">
-            This form is disabled on the static site.
-          </p>
-        </form>
+      <div class="social-links">
+        <a href="https://www.facebook.com/people/Radium-Industrial-Supplies-Inc/61578065264852/" target="_blank" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
       </div>
+    </div>
+
+    <div class="contact-right reveal">
+      <h3>Send Us a Message</h3>
+      <form class="contact-form" onsubmit="return false;">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+        <p id="formNotice">This form is disabled on the static site.</p>
+      </form>
     </div>
   </div>
 </section>
 
 <!-- ================= FOOTER ================= -->
 <footer class="footer">
-  <div class="footer-bottom">
-    <p>&copy; 2026 Radium Industrial Supplies Inc. All rights reserved.</p>
+  <div class="container footer-inner">
+    <span class="logo-text footer-logo">Radium<strong>Industrial</strong></span>
+    <nav class="footer-nav">
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#testimonials">Clients</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <p class="footer-copy">&copy; 2026 Radium Industrial Supplies Inc. All rights reserved.</p>
   </div>
 </footer>
 
